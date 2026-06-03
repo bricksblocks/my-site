@@ -1,8 +1,9 @@
 <html>
     <body>
-        <h2>welcome dude..!</h2>
+        <h2 id="Hint">welcome dude..!</h2>
         <div>
-            <a>oz's... page thing!</a>
+            <a>oz / ozzo's... page thing!!!!!!!!!!!!</a><br/>
+            <img src="durr.gif" style="width: 50px; height: 50px;">
             <hr/>
             <a><b>INTRODUCTION > > </b><br/> heyo, i'm oz!!<br/>
             15 <i>(06/09)</i> & brazillian<br/>
@@ -14,25 +15,35 @@
             i go by any pronouns!
         </div>
         <div>
-            <b>INTERESTS / FANDOMS > > </b><br/> i like <span style="color: rgb(187, 255, 181); font-weight: 600;">Roblox, TADC, Die of Death, No Plan Today, Eternity, Phighting, Minecraft, ARGs, Gameoverse, Garry's Mod, Half Life 2, and more..!!</span> just ask if you wanna know more :D
+            <b>INTERESTS / FANDOMS > > </b><br/>
+            <img src="loading.gif" style="width: 30px; height: 30px;">
+            <br/> i like <span style="color: rgb(187, 255, 181); font-weight: 600;">Roblox, TADC, Die of Death, No Plan Today, Eternity, Phighting, Minecraft, ARGs, Gameoverse, Garry's Mod, Half Life 2, and more..!!</span> just ask if you wanna know more :D
         </div>
         <div>
             <a>
-            <b>INFO > > </b><br/> you can find me as <span style="color: rgb(255, 152, 83); font-weight: 600;">momentum_x8</span> on Roblox, and <span style="color: rgb(255, 152, 83); font-weight: 600;">d_x64</span> on Discord
+            <b>INFO > > </b><br/>
+            <img src="lego-lego-brick.gif" style="width: 30px; height: 30px;">
+            <br/> you can find me as <span style="color: rgb(255, 152, 83); font-weight: 600;">momentum_x8</span> on Roblox, and <span style="color: rgb(255, 152, 83); font-weight: 600;">d_x64</span> on Discord
             </a>
         </div>
         <div>
             <a>
-            <b>DNI > > </b><br/> basic dni.<br/><span style="color: rgb(255, 83, 83); font-weight: 600;">dark/proshippers, homophobics, endos</span>
+            <b>DNI > > </b><br/>
+            <img src="shocked.gif" style="width: 30px; height: 30px;">
+            <br/> basic dni.<br/><span style="color: rgb(255, 83, 83); font-weight: 600;">dark/proshippers, homophobics, endos</span>
             </a>
         </div>
         <div>
             <a><b>FRIENDS & COOL PEOPLE > > </b><br/>
-                <span style="font-family: Arial; color: rgb(165, 165, 165); font-size: small;">(orange means they have a site!!)</span><br/>
-                <!--<a style="font-weight: bold; color: #ff8800" href="https://youtube.com/">Cyber</a>-->
+                <img src="happy.gif".gif" style="width: 30px; height: 30px;">
+                <br/>
+                <span style="font-family: Arial; color: rgb(165, 165, 165); font-size: small;">(underlined means they have a site!!)</span><br/>
+                <a style="font-weight: normal; color: #A776C6" href="https://baldisbasicsineducationandlearning.straw.page/">Cyber - that's what i do, u know it's true</a><br/>
+                <a style="font-weight: normal; color: #ffffff">wawa - <i>i like to eat bricks and glue. theyre awesome</i></a><br/>
+                <a style="font-weight: normal; color: #ffe818">webav - <i>nop</i></a>
             </a>
         </div>
-        <span style="font-family: Arial; text-shadow: 0.1em 0 black, 0 0.1em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black; color: rgb(255, 255, 255); font-weight: 500; font-size: small;">WIP!!</span>
+        <span style="font-family: Arial; text-shadow: 0.1em 0 black, 0 0.1em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black; color: rgb(255, 255, 255); font-weight: 500; font-size: small;">WIP!! - website coded, styled and built by oz <img src="durr.gif" style="width: 15px; height: 15px;"></span>
     </body>
     <style>
         body {
@@ -53,7 +64,7 @@
             color: white;
             font-family: Arial;
             font-weight: 100;
-            height: 20px;
+            height: fit-content;
             font-size: 20px;
             position: absolute;
             top: 0;
@@ -74,12 +85,31 @@
             border-radius: 4px;
             justify-content: center;
             align-content: center;
-            display: non;
+            display: table;
             border-color: rgb(255, 0, 0);
             border-style: solid;
             border-width: 2px;
             backdrop-filter: blur(20px);
             background-color: rgba(0, 0, 0, 0.849);
+            transition: all 0.2s ease-in-out;
+        }
+        div:hover {
+            background-color: rgba(44, 0, 0, 0.849);
         }
     </style>
+    <script>
+        let hint = document.getElementById("Hint")
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms))
+        }
+        async function loop() {
+            while (true) {
+                hint.textContent = " --==( ^_^ welcome!! -_- )==-- "
+                await sleep(1000)
+                hint.textContent = " --==( -_- welcome!! ^_^ )==-- "
+                await sleep(1000)
+            }
+        }
+        loop()
+    </script>
 </html>
